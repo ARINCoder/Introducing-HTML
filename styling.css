@@ -1,0 +1,91 @@
+body {
+    background-color: #065048;
+
+}
+
+h1,
+h2 {
+    display: grid;
+    justify-items: center;
+    transform: rotate(-5deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+h1,
+h2:hover {
+    transform: rotate(3deg);
+}
+
+
+.profilepics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    width: auto !important;
+    height: 100vh;
+}
+
+.google,
+.rstudio,
+.react {
+    display: grid;
+    background-color: blueviolet;
+    /* width: auto !important; */
+    height: 100vh;
+    border-radius: 100px;
+}
+
+.title {
+    color: rgb(207, 13, 165);
+    display: grid;
+    transform: rotate(-5deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+title:hover {
+    transform: rotate(3deg);
+}
+
+img {
+    display: grid;
+    width: 40px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+p {
+    color: #000;
+    margin: 10%;
+    margin-top: -20%;
+    opacity: 0;
+    /* Start with opacity 0 to hide initially */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.rstudio-p {
+    color: #180101;
+    margin: 10%;
+    margin-top: -70%;
+}
+
+.rr {
+    color: #290529;
+    margin: 10%;
+    margin-top: -33%;
+}
+
+#studio {
+    margin-top: 10%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* Start at fully transparent */
+    }
+
+    100% {
+        opacity: 1;
+        /* End at fully opaque */
+    }
+}
