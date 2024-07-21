@@ -1,5 +1,5 @@
 body {
-    background-color: #065048;
+    background-color: #f1f7f6;
 
 }
 
@@ -29,7 +29,7 @@ h2:hover {
 .rstudio,
 .react {
     display: grid;
-    background-color: blueviolet;
+    background-color: rgb(61, 43, 226);
     /* width: auto !important; */
     height: 100vh;
     border-radius: 100px;
