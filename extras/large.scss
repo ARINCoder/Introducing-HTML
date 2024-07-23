@@ -1,0 +1,157 @@
+body {
+    background-color: azure;
+    hr {
+        border-color: black;
+        border-style: dashed;
+    }
+
+    .container {
+        padding: 20px;
+
+
+        h1 {
+            display: flex;
+            font-size: 40px;
+            color: black;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .instagram {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            h2 {
+                display: flex;
+                flex-direction: row;
+                padding: 30px;
+                color: #d13e11;
+                animation-name: lg;
+                animation-duration: 9s;
+
+                img {
+                    display: inline-flex;
+                    flex-direction: row;
+                    border: 1px;
+                    border-radius: 100%;
+                    width: 30px;
+                    height: 30px;
+                    padding: 1px;
+                }
+            }
+
+            @keyframes lg {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+
+            }
+
+            p {
+                font-size: 20px;
+                hyphens: auto;
+            }
+        }
+
+        .react {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+            p {
+                font-size: x-large;
+                hyphens: auto;
+
+            }
+
+            h2 {
+                font: bolder;
+                animation-name: rct;
+                animation-duration: 9s;
+                font-size: xx-large;
+            }
+
+            @keyframes rct {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.2);
+                }
+
+                100% {
+                    transform: scale(1);
+                }
+
+            }
+
+            .react-image {
+                width: 100px;
+                border-radius: 100%;
+                animation-name: rctimg;
+                animation-duration: 9s;
+
+
+            }
+
+            @keyframes rctimg {
+                to {
+                    transform: scale(1.2);
+                }
+
+            }
+        }
+
+        .rstudio {
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+
+            h2 {
+                font-size: 100px;
+                animation-name: rds;
+                animation-duration: 9s;
+
+            }
+
+            img {
+                width: 20px;
+                margin-right: 10px;
+                animation-name: rds;
+                animation-duration: 9s;
+            }
+
+            p {
+                font-size: x-large;
+                hyphens: auto;
+
+            }
+
+            @keyframes rds {
+                0% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.1);
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,0 +1,93 @@
+body {
+    background-color: azure;
+
+    hr {
+        border-color: black;
+        border-style: dashed;
+    }
+
+    .container {
+        align-items: center;
+        background-color: rgb(245, 196, 136);
+        padding: 8px;
+        margin: 10px;
+
+        h1 {
+            display: flex;
+            font-size: 50px;
+            justify-content: center;
+        }
+
+        .instagram {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                font-size: 50px;
+                font-family: monospace;
+
+
+                img {
+                    display: inline-flex;
+                    margin-bottom: -6.5px;
+                    width: 40px;
+                    border-radius: 100%;
+                }
+
+            }
+
+            p {
+                font-size: xx-large;
+                font-family: monospace;
+                hyphens: auto;
+
+            }
+        }
+
+        .react {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+            h2 {
+                font-size: 50px;
+                margin: auto;
+                font-family: monospace;
+
+            }
+
+            .react-image {
+                width: 100px;
+                border-radius: 100%;
+                border: 10px solid black;
+            }
+
+            p {
+                font-size: xx-large;
+                font-family: monospace;
+                hyphens: auto;
+            }
+        }
+        .rstudio{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            h2{
+                font-size: 50px;
+                margin: auto;
+                font-family: monospace;
+            }
+            img{
+                width: 100px;
+                border-radius: 100%;
+            }
+            p{
+                font-size: xx-large;
+                font-family: monospace;
+            }
+        }
+
+    }
+}
