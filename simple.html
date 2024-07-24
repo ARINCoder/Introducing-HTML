@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./simple.js"></script>
+    <link rel="stylesheet" href="input.css">
 </head>
 
 <body>
@@ -14,8 +15,12 @@
     <p> Dream Car is: <span id="car"> </span></p>
     <p> My details are: <span id="details"> </span></p>
     <p> The multiplication is : <span id="multiplication"> </span></p>
-    <p> The division is: <span id="division"> </span></p>
+    <p> The division is: <span id="x"> </span></p>
     <p> <span id="y"> </span></p>
+    <p>The firstmessage: <span id="firstmessage"> </span> </p>
+    <p> The vehicle is: <span id="veh"> </span></p>
+    <p> The vehicles number plate is: <span id="plate"></span></p>
+    <p> Credentials: <span id="cred"> </span></p>
     <script>
         document.getElementById("SimpleOp").textContent = name
         document.getElementById("sum").textContent = sum;
@@ -27,8 +32,14 @@
       <p>Age: ${details.age}</p>
     `;
         document.getElementById("multiplication").innerHTML = mult;
-        document.getElementById("division").innerHTML = division
+        document.getElementById("x").innerHTML = x;
         document.getElementById("y").innerHTML = y
+        document.getElementById("firstmessage").innerHTML = firstMessage;
+        document.getElementById("veh").innerHTML = vehicle;
+        document.getElementById("plate").innerHTML = plate;
+        document.getElementById("cred").innerHTML = `
+        <p> Email: ${individual.emails} </p>
+        `
 
     </script>
 </body>

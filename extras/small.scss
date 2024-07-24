@@ -1,0 +1,65 @@
+$glow_color: #0a21f0;
+
+body {
+    background-color: rgb(248, 242, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    p {
+        border: 1px solid rgb(180, 235, 180);
+        padding: 10px;
+        color: black;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        &::before{
+            content: attr(data-text); // Use data-text attribute for content
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff; // Text color for glowing effect
+        z-index: -1; // Ensure pseudo-element is behind original text
+        overflow: hidden;
+        white-space: nowrap; 
+        }
+        text-shadow: 0 0 10px $glow-color,
+            0 0 20px $glow-color,
+            0 0 30px $glow-color,
+            0 0 40px $glow-color,
+            0 0 50px $glow-color,
+            0 0 60px $glow-color,
+            0 0 70px $glow-color,
+            0 0 80px $glow-color;
+        animation: glow-animation 1s infinite alternate;
+
+    }
+
+    @keyframes glow-animation {
+        0% {
+            text-shadow: 0 0 10px $glow-color,
+                0 0 20px $glow-color,
+                0 0 30px $glow-color,
+                0 0 40px $glow-color,
+                0 0 50px $glow-color,
+                0 0 60px $glow-color,
+                0 0 70px $glow-color,
+                0 0 80px $glow-color; 
+        }
+
+        100% {
+            text-shadow: 0 0 20px $glow-color,
+                0 0 30px $glow-color,
+                0 0 40px $glow-color,
+                0 0 50px $glow-color,
+                0 0 60px $glow-color,
+                0 0 70px $glow-color,
+                0 0 80px $glow-color,
+                0 0 90px $glow-color; 
+        }
+
+
+    }
+
+}
