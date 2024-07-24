@@ -1,4 +1,4 @@
-let name = "Marvin" + " " + "Githambo";
+let name = "John" + " " + "Doe";
 let x = 56;
 y = 67;
 sum = x + y
@@ -10,10 +10,10 @@ console.log(sum)
 let carName = "Mercedes" + " " + "Benz" + " " + "C550"
 let personalDetails = () => {
     return {
-        firstName: "Marvin",
+        firstName: "John",
         lastName: "Doe",
         car: "Mercedes" + " " + "Benz",
-        age: 25
+        age: 23
     }
 }
 
@@ -44,9 +44,9 @@ let plate = "KBZ" + " " + "Benz" + " " + 334 + "Z"
 console.log(plate) //KBZ Benz 334Z
 const individual = {}
 //
-individual.firstname = "Marvin",
+individual.firstname = "Doe",
 individual.lastname = "John",
-individual.emails = "marvinjohn@gmail.com",
+individual.emails = "doejohn@gmail.com",
 individual.age = 23,
 individual.gender = "male",
 individual.country = "Kenya"
