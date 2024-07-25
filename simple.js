@@ -8,7 +8,7 @@ x;
 y;
 console.log(sum)
 let carName = "Mercedes" + " " + "Benz" + " " + "C550"
-let personalDetails = () => {
+const personalDetails = () => {
     return {
         firstName: "John",
         lastName: "Doe",
@@ -17,7 +17,7 @@ let personalDetails = () => {
     }
 }
 
-let details = personalDetails();
+const details = personalDetails();
 console.log(details)
 let firstMessage = " Hello"; firstMessage += " World!";
 //Binary Representation
@@ -26,7 +26,7 @@ z <<= 5; // this shifts all the bits in "z" to the left by 5 positions
 console.log(z); //3200
 //Moving num right shift
 // Right shift assignment
-let  num = 900
+let num = 900
 num >>= 6;
 console.log(num); //14
 //Nullish Coalescing Assignment
@@ -45,11 +45,101 @@ console.log(plate) //KBZ Benz 334Z
 const individual = {}
 //
 individual.firstname = "Doe",
-individual.lastname = "John",
-individual.emails = "doejohn@gmail.com",
-individual.age = 23,
-individual.gender = "male",
-individual.country = "Kenya"
+    individual.lastname = "John",
+    individual.emails = "doejohn@gmail.com",
+    individual.age = 23,
+    individual.gender = "male",
+    individual.country = "Kenya"
 console.log(individual.country)
-console.log(individual)
+console.log(individual);
+const myFunction = (a, b) => {
+    return a + b;
+
+}
+let l = myFunction(5, 8);//13
+console.log(l);
+const temp = (celsius) => {
+    return (65 / 23) * (celsius - 32)
+
+}
+let t = temp(54)
+console.log(t);
+const caR = {
+    brand: "Mercedes",
+    model: "Benz",
+    year: 2023,
+    color: "black",
+    cardetails: function () {
+        const deTails = () => {
+            return this.brand + " " + this.model
+        }
+        return deTails()
+    }
+};
+console.log(caR.cardetails());
+house = {
+    type: "Bungalow",
+    size: "14feet",
+    locations: {
+        county1: "Mombasa",
+        county2: "Nairobi",
+        county3: "Kisumu",
+        conty4: "Kiambu",
+        county5: "Nyeri",
+    }
+}
+console.log(house.locations.county1)
+//
+let country = {
+    name: "Kenya",
+    population: 50000000,
+    capital: "Nairobi",
+    languages: ["English", "Kiswahili", "Swahili"],
+    currency: "Kenyan Shillings",
+    demonym: "Kenyan",
+    area: 580367,
+    continent: "Africa",
+    dEtails: function () {
+        const countryDetails = () => {
+            return `Name:${this.name}, 
+            Population:${this.population.toLocaleString()}, 
+        Capital City:${this.capital},Language:${this.languages}, Currency:${this.currency},
+        Denonym:${this.demonym}, Area Approximation:${this.area.toLocaleString()} sq km,
+        Continent:${this.continent}`;
+        }
+        return countryDetails()
+
+    }
+}
+console.log(country.dEtails())
+
+// function toggleBulb() {
+//     var bulbOn = document.getElementById('bulb-on');
+//     var bulbOff = document.getElementById('bulb-off');
+
+//     // Toggle visibility of bulbs
+//     if (bulbOn.style.display === 'none') {
+//         bulbOn.style.display = 'inline';
+//         bulbOff.style.display = 'none';
+//     } else {
+//         bulbOn.style.display = 'none';
+//         bulbOff.style.display = 'inline';
+//     }
+// }
+//
+
+const turnOn = () => {
+    bulbOn.style.display = 'inline';
+    bulbOff.style.display = 'none';
+
+}
+const turnOff = () => {
+    bulbOn.style.display = 'none';
+    bulbOff.style.display = 'inline';
+}
+ 
+
+
+
+
 

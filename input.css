@@ -6,6 +6,30 @@
     align-items: center;
     padding: 20px;
   }
+  body .bulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  body .bulb img {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px;
+    background-color: inherit;
+  }
+  body .bulb img bulb-off {
+    display: inline;
+  }
+  body .bulb img bulb-on {
+    display: none;
+  }
+  body .bulb button {
+    border-radius: 100%;
+    background-color: black;
+    color: rgb(255, 253, 253);
+    border: 1px solid black;
+  }
   body p {
     border: 1px solid rgb(180, 235, 180);
     padding: 10px;
@@ -42,12 +66,37 @@
     flex-direction: column;
     align-items: center;
   }
+  body .bulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  body .bulb img {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px;
+    background-color: inherit;
+  }
+  body .bulb img bulb-off {
+    display: inline;
+  }
+  body .bulb img bulb-on {
+    display: none;
+  }
+  body .bulb button {
+    border-radius: 100%;
+    background-color: black;
+    color: rgb(255, 253, 253);
+    border: 1px solid black;
+  }
   body P {
     padding: 10px;
     font-size: xx-large;
     font-family: monospace;
     color: rgba(255, 255, 255, 0.616);
-    text-shadow: 0 0 10px #00c4ff, 0 0 20px #00c4ff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff, 0 0 80px #00c4ff; /* Blue glow */
+    text-shadow: 0 0 10px #00c4ff, 0 0 20px #00c4ff, 0 0 30px #00c4ff, 0 0 40px #00c4ff, 0 0 50px #00c4ff, 0 0 60px #00c4ff, 0 0 70px #00c4ff, 0 0 80px #00c4ff;
+    /* Blue glow */
   }
 }
 @media screen and (min-width: 992px) {
@@ -58,12 +107,42 @@
     justify-items: center;
     align-items: center;
   }
+  body .bulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  body .bulb img {
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px;
+    background-color: inherit;
+  }
+  body .bulb img bulb-off {
+    display: inline;
+  }
+  body .bulb img bulb-on {
+    display: none;
+  }
+  body .bulb button {
+    border-radius: 100%;
+    background-color: black;
+    color: rgb(255, 253, 253);
+    border: 1px solid black;
+  }
   body p {
     color: rgb(104, 212, 42);
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     font-size: xx-large;
     font-family: monospace;
+  }
+  body #count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(212, 247, 14);
   }
 }
 

@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <div class="bulb">
+        <img id="bulb-on" src="./assets/light-bulb-on-off-png-11553940171g57vp25a8k.png" alt=" Bulb On">
+        <img id="bulb-off" src="./assets/images.jpeg" alt="Bulb Off">
+        <!-- <br>
+        <button onclick="toggleBulb()">Turn On</button>
+        <button onclick="toggleBulb()">Turn Off </button> -->
+        <button onclick="turnOn()">Turn On</button>
+        <button onclick="turnOff()">Turn Off</button>
+
+
+    </div>
     <p> Javascript Simple Operations: My name is <span id="SimpleOp"> </span> </p>
     <p> The sum of the Numbers is: <span id="sum"> </span></p>
     <p> Dream Car is: <span id="car"> </span></p>
@@ -21,6 +32,10 @@
     <p> The vehicle is: <span id="veh"> </span></p>
     <p> The vehicles number plate is: <span id="plate"></span></p>
     <p> Credentials: <span id="cred"> </span></p>
+    //Temperature
+    <p> The Current Temperature: <span id="temp"> </span></p>
+    <P>My Order is: <span id="Car"> </span></P>
+    <p id="count"> The Country's details are: <span id="country"></span> </p>
     <script>
         document.getElementById("SimpleOp").textContent = name
         document.getElementById("sum").textContent = sum;
@@ -39,7 +54,13 @@
         document.getElementById("plate").innerHTML = plate;
         document.getElementById("cred").innerHTML = `
         <p> Email: ${individual.emails} </p>
-        `
+        `;
+        document.getElementById("temp").innerHTML = t;
+        document.getElementById("Car").innerHTML = `<p> ${caR.cardetails()} </p> `;
+        document.getElementById("country").innerHTML = `<p> ${country.dEtails()} </p>`
+        var bulbOn = document.getElementById('bulb-on');
+        var bulbOff = document.getElementById('bulb-off');
+
 
     </script>
 </body>
